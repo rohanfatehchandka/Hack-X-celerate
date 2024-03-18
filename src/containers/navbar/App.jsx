@@ -57,8 +57,13 @@ const Wrapper = styled.div`
 // };
 
 const NavItem = styled.li`
-  margin-right: 0; /* Adjust for mobile view */
+  margin-right: 50px; /* Adjust for proper spacing between headers */
   margin-bottom: 20px; /* Adjust for mobile view */
+  @media (max-width: 1000px) {
+    // margin-right: 10;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
 `;
 
 const NavImage = styled.img`
@@ -69,8 +74,11 @@ const NavImage = styled.img`
 
 const RightLogo = styled.img`
   width: ${(props) => props.width}; /* Adjust the size of the image */
-  margin-left: 5px;
-  margin-right: 10px;
+  margin-right: 440px; /* Add some spacing between the logo and headings */
+  @media (max-width: 1000px) {
+    margin-right: 20px;
+    margin-left: auto;
+  }
 `;
 
 const RightLogo1 = styled.img`
@@ -122,65 +130,59 @@ const NAVBAR = ({}) => {
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
             <ul>
-              <RightLogo src={rightLogo} width="300px" alt="Right Logo" />
-              <div className="links1">
-                <div
-                  style={{
-                    marginLeft: "30px",
-                    fontStyle: "italic",
-                    fontSize: "15px",
-                  }}
-                >
-                  in association with
-                </div>
-                <div>
-                  <RightLogo
-                    src={rightLogo1}
-                    width="280px"
-                    alt="Right Logo"
-                    style={{ marginRight: "40px", marginLeft: "-20px" }}
-                  />
-                </div>
-              </div>
+              <RightLogo src={rightLogo} width="330px" alt="Right Logo" />
+
               <NavItem>
                 <li onClick={handleLinkClick}>
                   <Link to={`#home`}>
-                    <span className="links">Home </span>{" "}
+                    <span className="links">
+                      <h3>Home </h3>
+                    </span>{" "}
                   </Link>
                 </li>
               </NavItem>
               <NavItem>
                 <li onClick={handleLinkClick}>
                   <Link to={`#about`}>
-                    <span className="links">About</span>{" "}
+                    <span className="links">
+                      <h3>About</h3>
+                    </span>{" "}
                   </Link>
                 </li>
               </NavItem>
               <NavItem>
                 <li onClick={handleLinkClick}>
                   <Link to={`#faq`}>
-                    <span className="links">FAQ </span>{" "}
+                    <span className="links">
+                      <h3>FAQ</h3>{" "}
+                    </span>{" "}
                   </Link>
                 </li>
               </NavItem>
               <NavItem>
                 <li onClick={handleLinkClick}>
                   <Link to={`#prizes`}>
-                    <span className="links">Prizes </span>{" "}
+                    <span className="links">
+                      <h3>Prizes</h3>{" "}
+                    </span>{" "}
                   </Link>
                 </li>
               </NavItem>
               <NavItem>
                 <li onClick={handleLinkClick}>
                   <Link to={`#sponsors`}>
-                    <span className="links">Sponsors </span>{" "}
+                    <span className="links">
+                      <h3>Sponsors</h3>{" "}
+                    </span>{" "}
                   </Link>
                 </li>
               </NavItem>
               <NavItem>
                 <li onClick={handleLinkClick}>
                   <Link to={`#team`}>
-                    <span className="links">Team </span>{" "}
+                    <span className="links">
+                      <h3>Team</h3>
+                    </span>{" "}
                   </Link>
                 </li>
               </NavItem>
