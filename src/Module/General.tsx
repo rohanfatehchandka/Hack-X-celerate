@@ -36,8 +36,8 @@ import Ryah from "./Assets/teami/Ryah.jpg";
 import zoha from "./Assets/teami/zoha.png";
 
 const TOP_SECTION = {
-  TITLE: "Join HackXcelerate",
-  Typed_effect: ["24 hours of creation", "Win awesome prizes"],
+  TITLE: "COC presents",
+  Typed_effect: ["HackXcelerate"],
   SHORT_DESCRIPTION:
     "Join us on 22nd-23rd March for 24 hours of creation, innovation, & fun. Grab the chances of winning exciting prizes and goodies.",
   IMG_SRC: boy,

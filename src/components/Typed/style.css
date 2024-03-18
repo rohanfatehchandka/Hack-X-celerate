@@ -7,13 +7,12 @@
     margin-top: 2rem;
 
 }
-.typing-div h1{
-    font-size: 5rem;
-    font-weight: 300;
+.typing-div h1 {
+    font-size: 8rem;
+    font-weight: 800;
     margin: 0;
     text-align: left;
 }
-
 @media  (max-width: 570px){
     .typing-div h1{
         font-size: 3rem;
