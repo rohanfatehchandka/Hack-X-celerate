@@ -244,7 +244,7 @@ const TeamInfo = [
       role: 'Siddhant: 7400320017',
       github: '',
       linkedin: '',
-      img: Ryah
+      img: lyin
     },
     // {
     //   Name: 'Erika',

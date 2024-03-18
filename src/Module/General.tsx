@@ -19,7 +19,7 @@ import qoom from "./Assets/sponsorsLogos/qoom.svg";
 import Replit from "./Assets/sponsorsLogos/replit.png";
 import sublime from "./Assets/sponsorsLogos/sublime.png";
 import taskade from "./Assets/sponsorsLogos/taskade.png";
-import lyin from "./Assets/teami/lyin.jpg";
+import lyin from "./Assets/teami/coordinator1.jpg";
 import vjti from "./Assets/sponsorsLogos/vjti.png";
 import vjti_tbi from "./Assets/sponsorsLogos/vjti_tbi.png";
 
@@ -33,7 +33,7 @@ import vjti_tbi from "./Assets/sponsorsLogos/vjti_tbi.png";
 import me from "./Assets/teami/me.png";
 import moon from "./Assets/teami/moon.png";
 import Ryah from "./Assets/teami/Ryah.jpg";
-import zoha from "./Assets/teami/zoha.png";
+import zoha from "./Assets/teami/coordinator2.jpg";
 
 const TOP_SECTION = {
   TITLE: "CoC presents",
@@ -248,7 +248,7 @@ const TeamInfo = [
       role: "Siddhant: 7400320017",
       github: "",
       linkedin: "",
-      img: Ryah,
+      img: lyin,
     },
     // {
     //   Name: "Erika",

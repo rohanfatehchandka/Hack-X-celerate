@@ -131,7 +131,11 @@ h1 {
     margin: 0;
     padding: 0;
   }
-
+.team-images-container>div {
+  margin: 0 10px;
+  display: flex;
+    justify-content: center;
+}
   .prizesection {
     margin: 5vh 0 0 0;
     padding: 17vh 0 0 4vh;

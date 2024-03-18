@@ -50,21 +50,21 @@ const Footer = () => {
     <div>
       <div className="footer">
         <div className="social-icons-container">
-          <div className="social-icon">
+          {/* <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.instagram}>
               <img src={Insta} alt="" />
             </a>
-          </div>
+          </div> */}
           {/* <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
               <img src={Dis} alt="" />
             </a>
           </div> */}
-          <div className="social-icon">
+          {/* <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.linkedin}>
               <img src={Linked} alt="" />
             </a>
-          </div>
+          </div> */}
           {/* <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.email}>
               <img src={Mail} alt="" />
@@ -92,7 +92,7 @@ const Footer = () => {
           )}
         </div> */}
         <div className="footer_info">
-          <p>Made with ❤️ Webdev team @coc_vjti</p>
+          <p>Made By Web Development team of CoC_VJTI</p>
           {/* <p>
             Contact us{' '}
             <a href={SOCIALS.email}>
@@ -121,9 +121,9 @@ const Footer = () => {
             </a>
           )}
         </div>
-        {template && viewTemplate && (
+        {/* {template && viewTemplate && (
           <GithubTemplate hideTemplate={() => setViewTemplate(false)} />
-        )}
+        )} */}
       </div>
     </div>
   );
