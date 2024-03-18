@@ -17,6 +17,7 @@ import {
   SponsorUS,
 } from "../../components/Sponsors/sponsors.jsx";
 import { JoinTeam, Member } from "../../components/Team";
+import { Judge } from "components/Judgesss";
 import {
   FOOTER,
   frequentlyAskedQuestions,
@@ -24,7 +25,7 @@ import {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-  TOP_SECTION,
+  JudgesInfo,
 } from "../../Module/General";
 import MyCalender from "../calender";
 import "./about.css";
@@ -70,6 +71,18 @@ const TeamMembers = (props, index) => {
       {props.map((s, i) => (
         <Col key={i} className="" sm={12} lg={4} md={4}>
           <Member info={s} />
+        </Col>
+      ))}
+    </Row>
+  );
+};
+
+const Judge1 = (props, index) => {
+  return (
+    <Row key={index} className="members">
+      {props.map((s, i) => (
+        <Col key={i} className="" sm={12} lg={4} md={4}>
+          <Judge info={s} />
         </Col>
       ))}
     </Row>
@@ -200,7 +213,11 @@ export default function HomePage() {
         {/* ********Sponsors ending here ***** */}
 
         {media && <Birds top="120vh" left="0vh" type="" />}
+        {/* ********Judges here ***** */}
 
+        <h1 id="team">Tracks</h1>
+
+        {JudgesInfo.map(Judge1)}
         {/* ********Team here ***** */}
         <h1 id="team">Contact</h1>
         {/* {FOOTER.JOIN_TEAM.required && (
@@ -212,19 +229,6 @@ export default function HomePage() {
         )} */}
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
-
-        {/* ********Judges here ***** */}
-
-        <h1 id="team"></h1>
-        {/* {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={TOP_SECTION.JUDGES_FORM_LINK}
-            content="Interested in being judge"
-          />
-        )}
-        {JudgesInfo.map(TeamMembers)}
-        ********Team ending here ***** */}
       </Container>
       <Footer />
     </div>

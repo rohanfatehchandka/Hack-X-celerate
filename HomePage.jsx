@@ -1,21 +1,21 @@
-import {UseMedia} from 'hooks/useMedia';
-import {useState} from 'react';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
-import {Accordion} from '../../components/Accordian/index.jsx';
-import Birds from '../../components/Animation';
-import Footer from '../../components/Footer/index.jsx';
-import {Myinfo} from '../../components/Landing/index.jsx';
-import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
-import Media from '../../components/Socials/index.jsx';
+import { UseMedia } from "hooks/useMedia";
+import { useState } from "react";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import { Logo, LogoSectionAbout } from "../../components/About/index.jsx";
+import { Accordion } from "../../components/Accordian/index.jsx";
+import Birds from "../../components/Animation";
+import Footer from "../../components/Footer/index.jsx";
+import { Myinfo } from "../../components/Landing/index.jsx";
+import { FirstPrize, PrizeHeading } from "../../components/Prizes/index.jsx";
+import Media from "../../components/Socials/index.jsx";
 import {
   Sponsor,
   SponsorsHead,
-  SponsorUS
-} from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/Team';
+  SponsorUS,
+} from "../../components/Sponsors/sponsors.jsx";
+import { JoinTeam, Member } from "../../components/Team";
 import {
   FOOTER,
   frequentlyAskedQuestions,
@@ -23,19 +23,19 @@ import {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-  TOP_SECTION
-} from '../../Module/General';
-import MyCalender from '../calender';
-import './about.css';
-import pattern from './assets/pattern4.png';
+  TOP_SECTION,
+} from "../../Module/General";
+import MyCalender from "../calender";
+import "./about.css";
+import pattern from "./assets/pattern4.png";
 
 const SponsorGroup = (props, index) => {
   return (
     <Row key={index}>
       {props.map((s, i) => (
         <Col key={i} className="" sm={12} lg={4} md={6}>
-          {' '}
-          <Sponsor srcx={s.src} />{' '}
+          {" "}
+          <Sponsor srcx={s.src} />{" "}
         </Col>
       ))}
     </Row>
@@ -82,10 +82,10 @@ const FrequentlyAsked = (props, index) => {
 
 export default function HomePage() {
   const [media, setMedia] = useState();
-  UseMedia('min-width', 1000, setMedia);
+  UseMedia("min-width", 1000, setMedia);
 
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
+    <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
@@ -107,8 +107,8 @@ export default function HomePage() {
       <Container fluid>
         {/* Logo section  */}
         <Row className=" logoSection">
-          <Col className="info-div" sm={12} lg={8} md={8}>'
-          <div id="about"></div>'
+          <Col className="info-div" sm={12} lg={8} md={8}>
+            '<div id="about"></div>'
             <LogoSectionAbout />
           </Col>
           <Col className="info-div" sm={12} lg={4} md={4}>
@@ -145,6 +145,8 @@ export default function HomePage() {
 
         {media && <Birds top="120vh" left="0vh" type="" />}
 
+        {/* ********Tracks here ***** */}
+
         {/* ********Team here ***** */}
         <h1 id="team">Contact</h1>
         {/* {FOOTER.JOIN_TEAM.required && (
@@ -167,8 +169,7 @@ export default function HomePage() {
             content="Interested in being judge"
           />
         )} */}
-        {/* {JudgesInfo.map(TeamMembers)}
-        ********Team ending here ***** */}
+        {JudgesInfo.map(TeamMembers)}
       </Container>
       <Footer />
     </div>

@@ -277,49 +277,40 @@ const TeamInfo = [
   // ],
 ];
 
-// const JudgesInfo = [
-//   [
-//     //Array 1
-//     {
-//       Name: "Rehan",
-//       role: "Organizer",
-//       github: "",
-//       linkedin: "",
-//       img: me,
-//     },
-//     {
-//       Name: "Moon",
-//       role: "Organizer",
-//       github: "",
-//       linkedin: "",
-//       img: moon,
-//     },
-//     {
-//       Name: "Ryah Garcia",
-//       role: "Organizer",
-//       github: "",
-//       linkedin: "",
-//       img: Ryah,
-//     },
-//   ],
-//   [
-//     //Array 2
-//     {
-//       Name: "Lyanola",
-//       role: "Organizer",
-//       github: "",
-//       linkedin: "",
-//       img: lyin,
-//     },
-//     {
-//       Name: "Zoheb",
-//       role: "Organizer",
-//       github: "",
-//       linkedin: "",
-//       img: zoha,
-//     },
-//   ],
-// ];
+const JudgesInfo = [
+  [
+    {
+      name: "Web Development",
+      role: "Organizer",
+      driveLink:
+        "https://drive.google.com/file/d/1F1Eb737CP6YlsMkkDUaWUmm88QZynzRG/view?usp=sharing",
+    },
+    {
+      name: "AI/ML",
+      role: "Organizer",
+      driveLink:
+        "https://drive.google.com/file/d/1F1Eb737CP6YlsMkkDUaWUmm88QZynzRG/view?usp=sharing",
+    },
+    {
+      name: "Blockchain",
+      role: "Organizer",
+      driveLink:
+        "https://drive.google.com/file/d/1F1Eb737CP6YlsMkkDUaWUmm88QZynzRG/view?usp=sharing",
+    },
+    {
+      name: "Cybersecurity",
+      role: "Organizer",
+      driveLink:
+        "https://drive.google.com/file/d/1F1Eb737CP6YlsMkkDUaWUmm88QZynzRG/view?usp=sharing",
+    },
+    {
+      name: "App Development",
+      role: "Organizer",
+      driveLink:
+        "https://drive.google.com/file/d/1F1Eb737CP6YlsMkkDUaWUmm88QZynzRG/view?usp=sharing",
+    },
+  ],
+];
 
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
@@ -396,7 +387,7 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-  // JudgesInfo,
+  JudgesInfo,
   frequentlyAskedQuestions,
   schedule,
   calenderStartingDate,
