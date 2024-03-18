@@ -48,13 +48,13 @@ const TOP_SECTION = {
 };
 
 const SOCIALS = {
-  instagram: "https://www.instagram.com/limbohacks/",
-  discord: "https://discord.com/invite/8XJSzmtWPp",
-  linkedin: "https://www.linkedin.com/company/limbo-hacks/",
-  twitter: "https://twitter.com/HacksLimbo",
-  devpost: "https://limbo-hacks-12968.devpost.com/",
-  email: "mailto:hello@limbohacks.tech",
-  mail: "hello@limbohacks.tech",
+  instagram: "https://www.instagram.com/coc_vjti/",
+  discord: "",
+  linkedin: "https://www.linkedin.com/company/community-of-coders-vjti/",
+  twitter: "",
+  devpost: "",
+  email: "",
+  mail: "",
 };
 
 const MIDDLE_SECTION = {
@@ -176,55 +176,55 @@ const Prizeinfo = [
     //Array 1
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: "overall First",
+      type: "Track Winner",
       content:
-        "First Overall prize will be given to a project that outstands all other submissions",
+        "First prize will be given to a project that outstands all other submissions. Each track will have an overall winner!",
     },
     {
       icon: <i className=" second fas fa-4x fa-medal"></i>,
-      type: "overall Second",
+      type: "Best FY",
       content:
-        "Second Overall prize will be given to the second best project of the hackathon",
+        "Special prize to the best team among all the First Year students!",
     },
     {
       icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
-      type: "Third Second",
+      type: "Best SY",
       content:
-        "Best third overall project of the hackathon will win some awesome prizes",
+        "Special prize to the best team among all the Second Year students!",
     },
   ],
-  [
-    //Array 2
-    {
-      icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
-      type: "Best Solo",
-      content:
-        "You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team",
-    },
-    {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: " Best Beginner",
-      content: "Your project will qualify for this category if atleast 50% ",
-    },
-    {
-      icon: <i className=" fifth fa-3x fas fa-book-open"></i>,
-      type: "Best UI/UX",
-      content: "Project with most creative designs will be UI/UX track",
-    },
-  ],
-  [
-    //Array 3
-    {
-      icon: <i className="fas fa-4x sixth fa-male"></i>,
-      type: "Best Web App with Qoom",
-      content: "Must use qoom in your project to win this category",
-    },
-    {
-      icon: <i className="fas fa-user-friends seventh fa-3x "></i>,
-      type: "More prizes",
-      content: "More prizes will be revealed later",
-    },
-  ],
+  // [
+  //   //Array 2
+  //   {
+  //     icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
+  //     type: "Best Solo",
+  //     content:
+  //       "You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team",
+  //   },
+  //   {
+  //     icon: <i className="first fas fa-4x fa-trophy"></i>,
+  //     type: " Best Beginner",
+  //     content: "Your project will qualify for this category if atleast 50% ",
+  //   },
+  //   {
+  //     icon: <i className=" fifth fa-3x fas fa-book-open"></i>,
+  //     type: "Best UI/UX",
+  //     content: "Project with most creative designs will be UI/UX track",
+  //   },
+  // ],
+  // [
+  //   //Array 3
+  //   {
+  //     icon: <i className="fas fa-4x sixth fa-male"></i>,
+  //     type: "Best Web App with Qoom",
+  //     content: "Must use qoom in your project to win this category",
+  //   },
+  //   {
+  //     icon: <i className="fas fa-user-friends seventh fa-3x "></i>,
+  //     type: "More prizes",
+  //     content: "More prizes will be revealed later",
+  //   },
+  // ],
 ];
 
 /** Instructions
@@ -237,89 +237,89 @@ const TeamInfo = [
   [
     //Array 1
     {
-      Name: "Rehan",
-      role: "Organizer",
-      github: "https://github.com/Limbo-Hacks/Hackathon-website-template",
-      linkedin: "",
-      img: me,
+      Name: 'Rehan',
+      role: 'Labib Asari: 9967547973',
+      github: '',
+      linkedin: '',
+      img: zoha
     },
     {
-      Name: "Moon",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: moon,
+      Name: 'Moon',
+      role: 'Siddhant: 7400320017',
+      github: '',
+      linkedin: '',
+      img: Ryah
     },
-    {
-      Name: "Erika",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: Ryah,
-    },
+    // {
+    //   Name: "Erika",
+    //   role: "Organizer",
+    //   github: "",
+    //   linkedin: "",
+    //   img: Ryah,
+    // },
   ],
-  [
-    //Array 2
-    {
-      Name: "Lyanola",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: lyin,
-    },
-    {
-      Name: "Zoheb",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: zoha,
-    },
-  ],
+  // [
+  //   //Array 2
+  //   {
+  //     Name: "Lyanola",
+  //     role: "Organizer",
+  //     github: "",
+  //     linkedin: "",
+  //     img: lyin,
+  //   },
+  //   {
+  //     Name: "Zoheb",
+  //     role: "Organizer",
+  //     github: "",
+  //     linkedin: "",
+  //     img: zoha,
+  //   },
+  // ],
 ];
 
-const JudgesInfo = [
-  [
-    //Array 1
-    {
-      Name: "Rehan",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: me,
-    },
-    {
-      Name: "Moon",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: moon,
-    },
-    {
-      Name: "Ryah Garcia",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: Ryah,
-    },
-  ],
-  [
-    //Array 2
-    {
-      Name: "Lyanola",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: lyin,
-    },
-    {
-      Name: "Zoheb",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: zoha,
-    },
-  ],
-];
+// const JudgesInfo = [
+//   [
+//     //Array 1
+//     {
+//       Name: "Rehan",
+//       role: "Organizer",
+//       github: "",
+//       linkedin: "",
+//       img: me,
+//     },
+//     {
+//       Name: "Moon",
+//       role: "Organizer",
+//       github: "",
+//       linkedin: "",
+//       img: moon,
+//     },
+//     {
+//       Name: "Ryah Garcia",
+//       role: "Organizer",
+//       github: "",
+//       linkedin: "",
+//       img: Ryah,
+//     },
+//   ],
+//   [
+//     //Array 2
+//     {
+//       Name: "Lyanola",
+//       role: "Organizer",
+//       github: "",
+//       linkedin: "",
+//       img: lyin,
+//     },
+//     {
+//       Name: "Zoheb",
+//       role: "Organizer",
+//       github: "",
+//       linkedin: "",
+//       img: zoha,
+//     },
+//   ],
+// ];
 
 /** Instructions
  * Only put 3 logos per array inside `sponsorLogos`, you can
@@ -342,48 +342,48 @@ const frequentlyAskedQuestions = [
   [
     [
       {
-        label: "What is a hackathon?",
+        label: 'What is a hackathon?',
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.',
+          'A hackathon is a fun event where people gather to code cool projects in a short time, like a coding marathon!.'
       },
       {
-        label: "Who can attend?",
+        label: 'What can I gain from participating in a hackathon?',
         content:
-          "Limbo Hacks is open to all undergraduate, high school students and middle school students from all schools.",
+          'Besides the chance to build something awesome, hackathons offer opportunities to learn new skills, network with industry professionals (Seniors and amazing peers as well!), and have a lot of fun with like-minded individuals!'
       },
       {
-        label: "I am a first time hacker, what should I do?",
+        label: 'I am a first time hacker, what should I do?',
         content:
-          "No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general.",
+          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome seniors which will help you get started with hackathon and hacking in general.'
       },
       {
-        label: "How team formation works?",
+        label: 'How to register myself in the hackathon?',
         content:
-          "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!",
-      },
+          "All you need is to fill our form above and join Discord, we will guide you through everything there"
+      }
     ],
     [
       {
-        label: "How to register myself in the hackathon?",
+        label: 'What should I bring to a hackathon?',
         content:
-          "All you need is to fill our form above and join Discord, we will guide you through everything there",
+          'Essentials include your laptop, chargers, any necessary hardware components and a positive attitude!'
       },
       {
-        label: "I have more questions?",
+        label: 'Do I need to be an experienced programmer to participate?',
         content:
-          "Reach us directly at (rehan@limbohacks.tech or hello@limbohacks.tech) we would happy to help you.",
+          'Not at all! While some participants may have advanced coding skills, hackathons welcome people of all skill levels. Its a great opportunity to learn and collaborate.'
       },
       {
-        label: "Can i volunteer?",
+        label: 'Who can attend?',
         content:
-          "Yes we are actively looking for volunteers, fill the form (in footer section) we will be glad to have you.",
+          'This event is for all First and Second year students from all branches of VJTI!'
       },
       {
-        label: "Will there be swag?",
-        content: "Yes! Participants will recieveing Limbo Hacks swag!.",
-      },
-    ],
-  ],
+        label: 'I have more questions!',
+        content: 'Contact our Coordinator: Siddhant or the Head Coordinator: Labib (contact info is mentioned below)'
+      }
+    ]
+  ]
 ];
 
 export {
@@ -395,7 +395,7 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-  JudgesInfo,
+  // JudgesInfo,
   frequentlyAskedQuestions,
   schedule,
   calenderStartingDate,
