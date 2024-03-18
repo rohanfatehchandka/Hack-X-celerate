@@ -1,14 +1,13 @@
 import { useEffect, useRef, useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 import HomePage from "../Home/HomePage";
-import logoClose from "./assets/ham-c.svg";
+import { MdxContent } from "../Mdx";
+import rightLogo1 from "./assets/123 (1)_prev_ui.png";
+import rightLogo from "./assets/HackXcelerate Logo (3).png";
 import hamLogo from "./assets/ham.svg";
 import "./styles.scss";
-import rightLogo from "./assets/HackXcelerate Logo (3).png";
-import rightLogo1 from "./assets/123.jpg";
-import { MdxContent } from "../Mdx";
 
 const NAVIGATION_OFFSET = 66;
 
@@ -160,9 +159,25 @@ const NAVBAR = ({}) => {
 
               <RightLogo src={rightLogo} width="300px" alt="Right Logo" />
               <div className="links1">
-                <span>in association with</span>
+                <div
+                  style={{
+                    marginLeft: "30px",
+
+                    fontStyle: "italic",
+                    fontSize: "15px",
+                  }}
+                >
+                  in association with
+                </div>
+                <div>
+                  <RightLogo
+                    src={rightLogo1}
+                    width="280px"
+                    alt="Right Logo"
+                    style={{ marginRight: "40px", marginLeft: "-20px" }}
+                  />
+                </div>
               </div>
-              <RightLogo src={rightLogo1} width="300px" alt="Right Logo" />
             </ul>
           </div>
           <div className="ease" />

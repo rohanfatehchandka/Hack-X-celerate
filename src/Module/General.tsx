@@ -20,6 +20,8 @@ import Replit from "./Assets/sponsorsLogos/replit.png";
 import sublime from "./Assets/sponsorsLogos/sublime.png";
 import taskade from "./Assets/sponsorsLogos/taskade.png";
 import lyin from "./Assets/teami/lyin.jpg";
+import vjti from "./Assets/sponsorsLogos/vjti.png";
+import vjti_tbi from "./Assets/sponsorsLogos/vjti_tbi.png";
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -326,10 +328,11 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{ src: cfc }, { src: sublime }, { src: echoAR }], //Array 1
-  [{ src: taskade }, { src: Replit }, { src: qoom }], //Array 2
-  [{ src: interviewC }, { src: pass }, { src: glimpse }], //Array 3
-  [{ src: egg }, { src: ll }, { src: ACF }], //Array 4
+  [{ src: vjti_tbi }], //Array 1
+  // [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
+  // [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
+  // [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
+  // [{src: egg}, {src: ll}, {src: ACF}] //Array 4
 ];
 
 /** Instructions

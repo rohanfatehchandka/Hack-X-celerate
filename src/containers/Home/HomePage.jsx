@@ -10,6 +10,7 @@ import Footer from "../../components/Footer/index.jsx";
 import { Myinfo } from "../../components/Landing/index.jsx";
 import { FirstPrize, PrizeHeading } from "../../components/Prizes/index.jsx";
 import Media from "../../components/Socials/index.jsx";
+import { TimelineComponent } from "../../components/Timeline/index.jsx";
 import {
   Sponsor,
   SponsorsHead,
@@ -38,6 +39,9 @@ const SponsorGroup = (props, index) => {
           <Sponsor srcx={s.src} />{" "}
         </Col>
       ))}
+      <Col className="sponsor-text">
+        <p>VJTI CE-IT Department</p>
+      </Col>
     </Row>
   );
 };
@@ -115,6 +119,10 @@ export default function HomePage() {
           <Col className="info-div" sm={12} lg={4} md={4}>
             <Logo />
           </Col>
+        </Row>
+
+        <Row>
+          <TimelineComponent />
         </Row>
 
         {/* ********Frequently asked Questions here ***** */}
