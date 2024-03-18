@@ -108,7 +108,9 @@ export default function HomePage() {
         {/* Logo section  */}
         <Row className=" logoSection">
           <Col className="info-div" sm={12} lg={8} md={8}>
-            <LogoSectionAbout />
+            <div id="about">
+              <LogoSectionAbout />
+            </div>
           </Col>
           <Col className="info-div" sm={12} lg={4} md={4}>
             <Logo />

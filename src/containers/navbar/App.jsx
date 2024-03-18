@@ -125,7 +125,7 @@ const NAVBAR = ({}) => {
               <NavItem>
                 <li>
                   <Link to={`#about`}>
-                    <span className="links">About </span>{" "}
+                    <span className="links">About</span>{" "}
                   </Link>
                 </li>
               </NavItem>
