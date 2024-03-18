@@ -66,6 +66,43 @@ h1 {
   width: 100%;
 }
 
+.sponsor-text{
+  transition: 0.3s;
+}
+
+.sponsor-text p{
+  font-size: 45px;
+  line-height: 2.25rem; 
+  font-weight: 700; 
+  margin-bottom: 3rem;
+  margin-top: 3rem; 
+}
+
+@media screen and (max-width: 768px) {
+  .sponsor-text p {
+    font-size: 30px;
+    line-height: 1.8rem;
+  }
+}
+
+.sponsor-text {
+ 
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+ }
+ @-webkit-keyframes mover {
+   0% { transform: translateY(0); }
+   100% { transform: translateY(-20px); }
+ }
+ @keyframes mover {
+   0% { transform: translateY(0); }
+   100% { transform: translateY(-20px); }
+ }
+
+ .sponsor-text:hover{
+  transform: scale(1.1);
+}
+
 .sponsorSection {
   padding: 17vh 18vh 0 18vh;
   margin-top: -10vh;
