@@ -67,7 +67,8 @@ const NavImage = styled.img`
 
 const RightLogo = styled.img`
   width: ${(props) => props.width}; /* Adjust the size of the image */
-  margin-left: 50px;
+  margin-left: 5px;
+  margin-right: 10px;
 `;
 const NAVBAR = ({}) => {
   const [toggle, setToggle] = useState(true);
@@ -114,6 +115,27 @@ const NAVBAR = ({}) => {
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
             <ul>
+              <RightLogo src={rightLogo} width="300px" alt="Right Logo" />
+              <div className="links1">
+                <div
+                  style={{
+                    marginLeft: "30px",
+
+                    fontStyle: "italic",
+                    fontSize: "15px",
+                  }}
+                >
+                  in association with
+                </div>
+                <div>
+                  <RightLogo
+                    src={rightLogo1}
+                    width="280px"
+                    alt="Right Logo"
+                    style={{ marginRight: "40px", marginLeft: "-20px" }}
+                  />
+                </div>
+              </div>
               <NavItem>
                 <li>
                   <Link to={`#home`}>
@@ -156,28 +178,6 @@ const NAVBAR = ({}) => {
                   </Link>
                 </li>
               </NavItem>
-
-              <RightLogo src={rightLogo} width="300px" alt="Right Logo" />
-              <div className="links1">
-                <div
-                  style={{
-                    marginLeft: "30px",
-
-                    fontStyle: "italic",
-                    fontSize: "15px",
-                  }}
-                >
-                  in association with
-                </div>
-                <div>
-                  <RightLogo
-                    src={rightLogo1}
-                    width="280px"
-                    alt="Right Logo"
-                    style={{ marginRight: "40px", marginLeft: "-20px" }}
-                  />
-                </div>
-              </div>
             </ul>
           </div>
           <div className="ease" />
