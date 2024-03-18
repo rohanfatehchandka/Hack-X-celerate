@@ -3,7 +3,8 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 import HomePage from "../Home/HomePage";
-import { MdxContent } from "../Mdx";
+// Import MdxContent if needed
+// import { MdxContent } from "../Mdx";
 import rightLogo1 from "./assets/123 (1)_prev_ui.png";
 import rightLogo from "./assets/HackXcelerate Logo (3).png";
 import hamLogo from "./assets/ham.svg";
@@ -22,11 +23,13 @@ const Wrapper = styled.div`
     width: 100vw;
     position: fixed;
     top: ${(props) => (props.toggle ? "-1000px" : "0px")};
-    transition: top 1s;
+    transition: top 0.5s;
+    z-index: 100; /* Ensure the sidebar is above other elements */
     .nav-content {
-      height: 35%;
+      height: 100%;
       background-color: rgba(50, 13, 136);
       display: flex;
+      flex-direction: column; /* Adjust for mobile view */
       justify-content: space-between;
       align-items: center;
     }
@@ -49,14 +52,13 @@ const Wrapper = styled.div`
 //       <h1>This is blog</h1>
 //       <h1>This is blog</h1>
 //       <h1>This is blog</h1>
-
 //     </div>
 //   );
 // };
 
 const NavItem = styled.li`
-  margin-right: 40px;
-  display: inline-block;
+  margin-right: 0; /* Adjust for mobile view */
+  margin-bottom: 20px; /* Adjust for mobile view */
 `;
 
 const NavImage = styled.img`
@@ -70,13 +72,20 @@ const RightLogo = styled.img`
   margin-left: 5px;
   margin-right: 10px;
 `;
+
+const RightLogo1 = styled.img`
+  width: ${(props) => props.width}; /* Adjust the size of the image */
+  margin-left: 5px;
+  margin-right: 10px;
+`;
+
 const NAVBAR = ({}) => {
   const [toggle, setToggle] = useState(true);
   const [isOffset, setIsOffset] = useState(false);
 
   const navigation = useRef();
 
-  const listenScrollEvent = (e) => {
+  const listenScrollEvent = () => {
     if (window.scrollY >= NAVIGATION_OFFSET) {
       setIsOffset(true);
     } else {
@@ -89,25 +98,23 @@ const NAVBAR = ({}) => {
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
 
-  const handleOutsideCick = (event, ref) => {
-    if (!ref.current.contains(event.target)) {
+  const handleOutsideCick = (event) => {
+    if (!navigation.current.contains(event.target)) {
       setToggle(true);
-    } else {
-      setToggle(false);
     }
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", (e) =>
-      handleOutsideCick(e, navigation)
-    );
+    document.addEventListener("mousedown", handleOutsideCick);
 
     return () => {
-      document.removeEventListener("mousedown", (e) =>
-        handleOutsideCick(e, navigation)
-      );
+      document.removeEventListener("mousedown", handleOutsideCick);
     };
   }, []);
+
+  const handleLinkClick = () => {
+    setToggle(true); // Close the sidebar when a link is clicked in mobile view
+  };
 
   return (
     <Router>
@@ -120,7 +127,6 @@ const NAVBAR = ({}) => {
                 <div
                   style={{
                     marginLeft: "30px",
-
                     fontStyle: "italic",
                     fontSize: "15px",
                   }}
@@ -137,42 +143,42 @@ const NAVBAR = ({}) => {
                 </div>
               </div>
               <NavItem>
-                <li>
+                <li onClick={handleLinkClick}>
                   <Link to={`#home`}>
                     <span className="links">Home </span>{" "}
                   </Link>
                 </li>
               </NavItem>
               <NavItem>
-                <li>
+                <li onClick={handleLinkClick}>
                   <Link to={`#about`}>
                     <span className="links">About</span>{" "}
                   </Link>
                 </li>
               </NavItem>
               <NavItem>
-                <li>
+                <li onClick={handleLinkClick}>
                   <Link to={`#faq`}>
                     <span className="links">FAQ </span>{" "}
                   </Link>
                 </li>
               </NavItem>
               <NavItem>
-                <li>
+                <li onClick={handleLinkClick}>
                   <Link to={`#prizes`}>
                     <span className="links">Prizes </span>{" "}
                   </Link>
                 </li>
               </NavItem>
               <NavItem>
-                <li>
+                <li onClick={handleLinkClick}>
                   <Link to={`#sponsors`}>
                     <span className="links">Sponsors </span>{" "}
                   </Link>
                 </li>
               </NavItem>
               <NavItem>
-                <li>
+                <li onClick={handleLinkClick}>
                   <Link to={`#team`}>
                     <span className="links">Team </span>{" "}
                   </Link>
@@ -184,14 +190,15 @@ const NAVBAR = ({}) => {
         </Wrapper>
         <img
           className="s-open"
-          onClick={() => setToggle(false)}
+          onClick={() => setToggle(!toggle)} // Toggle sidebar on hamburger click
           src={hamLogo}
         />
       </nav>
       <Switch>
-        <Route path="/blog" exact={true}>
+        {/* Uncomment below if MdxContent is used */}
+        {/* <Route path="/blog" exact={true}>
           <MdxContent />
-        </Route>
+        </Route> */}
         <Route path="/" exact={true}>
           <HomePage />
         </Route>
