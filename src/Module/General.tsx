@@ -237,18 +237,18 @@ const TeamInfo = [
   [
     //Array 1
     {
-      Name: 'Rehan',
-      role: 'Labib Asari: 9967547973',
-      github: '',
-      linkedin: '',
-      img: zoha
+      Name: "Rehan",
+      role: "Labib Asari: 9967547973",
+      github: "",
+      linkedin: "",
+      img: zoha,
     },
     {
-      Name: 'Moon',
-      role: 'Siddhant: 7400320017',
-      github: '',
-      linkedin: '',
-      img: Ryah
+      Name: "Moon",
+      role: "Siddhant: 7400320017",
+      github: "",
+      linkedin: "",
+      img: Ryah,
     },
     // {
     //   Name: "Erika",
@@ -342,48 +342,49 @@ const frequentlyAskedQuestions = [
   [
     [
       {
-        label: 'What is a hackathon?',
+        label: "What is a hackathon?",
         content:
-          'A hackathon is a fun event where people gather to code cool projects in a short time, like a coding marathon!.'
+          "A hackathon is a fun event where people gather to code cool projects in a short time, like a coding marathon!.",
       },
       {
-        label: 'What can I gain from participating in a hackathon?',
+        label: "What can I gain from participating in a hackathon?",
         content:
-          'Besides the chance to build something awesome, hackathons offer opportunities to learn new skills, network with industry professionals (Seniors and amazing peers as well!), and have a lot of fun with like-minded individuals!'
+          "Besides the chance to build something awesome, hackathons offer opportunities to learn new skills, network with industry professionals (Seniors and amazing peers as well!), and have a lot of fun with like-minded individuals!",
       },
       {
-        label: 'I am a first time hacker, what should I do?',
+        label: "I am a first time hacker, what should I do?",
         content:
-          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome seniors which will help you get started with hackathon and hacking in general.'
+          "No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome seniors which will help you get started with hackathon and hacking in general.",
       },
       {
-        label: 'How to register myself in the hackathon?',
+        label: "How to register myself in the hackathon?",
         content:
-          "All you need is to fill our form above and join Discord, we will guide you through everything there"
-      }
+          "All you need is to fill our form above and join Discord, we will guide you through everything there",
+      },
     ],
     [
       {
-        label: 'What should I bring to a hackathon?',
+        label: "What should I bring to a hackathon?",
         content:
-          'Essentials include your laptop, chargers, any necessary hardware components and a positive attitude!'
+          "Essentials include your laptop, chargers, any necessary hardware components and a positive attitude!",
       },
       {
-        label: 'Do I need to be an experienced programmer to participate?',
+        label: "Do I need to be an experienced programmer to participate?",
         content:
-          'Not at all! While some participants may have advanced coding skills, hackathons welcome people of all skill levels. Its a great opportunity to learn and collaborate.'
+          "Not at all! While some participants may have advanced coding skills, hackathons welcome people of all skill levels. Its a great opportunity to learn and collaborate.",
       },
       {
-        label: 'Who can attend?',
+        label: "Who can attend?",
         content:
-          'This event is for all First and Second year students from all branches of VJTI!'
+          "This event is for all First and Second year students from all branches of VJTI!",
       },
       {
-        label: 'I have more questions!',
-        content: 'Contact our Coordinator: Siddhant or the Head Coordinator: Labib (contact info is mentioned below)'
-      }
-    ]
-  ]
+        label: "I have more questions!",
+        content:
+          "Contact our Coordinator: Siddhant or the Head Coordinator: Labib (contact info is mentioned below)",
+      },
+    ],
+  ],
 ];
 
 export {

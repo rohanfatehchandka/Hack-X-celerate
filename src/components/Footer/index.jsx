@@ -92,7 +92,7 @@ const Footer = () => {
           )}
         </div> */}
         <div className="footer_info">
-        <p>Made with ❤️ Webdev team @coc_vjti</p>
+          <p>Made with ❤️ Webdev team @coc_vjti</p>
           {/* <p>
             Contact us{' '}
             <a href={SOCIALS.email}>
@@ -120,7 +120,6 @@ const Footer = () => {
               <p>Terms of Use</p>
             </a>
           )}
-          
         </div>
         {template && viewTemplate && (
           <GithubTemplate hideTemplate={() => setViewTemplate(false)} />

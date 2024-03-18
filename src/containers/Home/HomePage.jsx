@@ -29,6 +29,10 @@ import {
 import MyCalender from "../calender";
 import "./about.css";
 import pattern from "./assets/pattern4.png";
+import hrs from "./assets/hrs.png";
+import team from "./assets/team.png";
+import prize from "./assets/prize.png";
+import tracks from "./assets/tracks.png";
 
 const SponsorGroup = (props, index) => {
   return (
@@ -96,8 +100,50 @@ export default function HomePage() {
             <Col className="info-div" sm={12} lg={7} md={7}>
               <Myinfo />
             </Col>
-            <Col className="d-image" sm={12} lg={5} md={5}>
-              <MyCalender />
+            <Col
+              className="d-image"
+              sm={12}
+              lg={5}
+              md={5}
+              style={{ marginTop: "40px", marginBottom: "25px" }}
+            >
+              <Row
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: window.innerWidth <= 640 ? "column" : "row",
+                  gap: window.innerWidth <= 640 && "3rem",
+                }}
+              >
+                <Col>
+                  <img src={hrs} style={{ width: "200px", height: "200px" }} />
+                </Col>
+                <Col>
+                  <img
+                    src={tracks}
+                    style={{ width: "200px", height: "200px" }}
+                  />
+                </Col>
+              </Row>
+              <Row
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  marginTop: window.innerWidth > 640 ? "40px" : "7px",
+                  flexDirection: window.innerWidth <= 640 ? "column" : "row",
+                  gap: window.innerWidth <= 640 && "3rem",
+                }}
+              >
+                <Col>
+                  <img src={team} style={{ width: "200px", height: "200px" }} />
+                </Col>
+                <Col>
+                  <img
+                    src={prize}
+                    style={{ width: "200px", height: "200px" }}
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
 
