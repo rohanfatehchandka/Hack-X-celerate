@@ -20,7 +20,7 @@ import { JoinTeam, Member } from "../../components/Team";
 import {
   FOOTER,
   frequentlyAskedQuestions,
-  JudgesInfo,
+  // JudgesInfo,
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
@@ -124,6 +124,7 @@ export default function HomePage() {
         </Row>
 
         {/* ********Frequently asked Questions here ***** */}
+        <h1 id="team">FAQs</h1>
         <div className="Myfaqs" id="faq">
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
           {/* ********Frequently asked Questions ending here ***** */}
@@ -136,10 +137,10 @@ export default function HomePage() {
         </Row>
         {/* ********Prizes ending here ***** */}
 
-        <Row className="prizesection non-coding">
+        {/* <Row className="prizesection non-coding">
           <PrizeHeading type="Non-coding prizes" />
           <h2>coming soon</h2>
-        </Row>
+        </Row> */}
 
         {/* ********Sponsors here ***** */}
 
@@ -153,21 +154,21 @@ export default function HomePage() {
         {media && <Birds top="120vh" left="0vh" type="" />}
 
         {/* ********Team here ***** */}
-        <h1 id="team">Our Team</h1>
-        {FOOTER.JOIN_TEAM.required && (
+        <h1 id="team">Contact</h1>
+        {/* {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
             placeholder="Join our team"
             formLink={FOOTER.JOIN_TEAM}
             content="Interested in joining our team"
           />
-        )}
+        )} */}
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
         {/* ********Judges here ***** */}
 
-        <h1 id="team">Judges</h1>
-        {FOOTER.JOIN_TEAM.required && (
+        <h1 id="team"></h1>
+        {/* {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
             placeholder="Join our team"
             formLink={TOP_SECTION.JUDGES_FORM_LINK}
@@ -175,7 +176,7 @@ export default function HomePage() {
           />
         )}
         {JudgesInfo.map(TeamMembers)}
-        {/* ********Team ending here ***** */}
+        ********Team ending here ***** */}
       </Container>
       <Footer />
     </div>
