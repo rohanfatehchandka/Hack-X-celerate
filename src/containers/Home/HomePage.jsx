@@ -210,10 +210,7 @@ export default function HomePage() {
             content="Interested in joining our team"
           />
         )} */}
-        {TeamInfo.map(TeamMembers)}
-        {/* ********Team ending here ***** */}
-
-        {/* ********Judges here ***** */}
+        <div className="team-images-container">{TeamInfo.map(TeamMembers)}</div>
 
         <h1 id="team"></h1>
         {/* {FOOTER.JOIN_TEAM.required && (
