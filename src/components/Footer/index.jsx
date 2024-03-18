@@ -17,12 +17,12 @@ const GithubTemplate = ({ hideTemplate }) => {
   return (
     <div className="template">
       <div className="template-left">
-        <p>
+        {/* <p>
           Join us to{" "}
           <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>Gear Up</a>,
           where we will be hosting PUBLIC workshops, tech talks, panel
           discussions, and career sessions!
-        </p>
+        </p> */}
       </div>
       <img onClick={hideTemplate} src={cross} />
     </div>
@@ -55,33 +55,33 @@ const Footer = () => {
               <img src={Insta} alt="" />
             </a>
           </div>
-          <div className="social-icon">
+          {/* <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
               <img src={Dis} alt="" />
             </a>
-          </div>
+          </div> */}
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.linkedin}>
               <img src={Linked} alt="" />
             </a>
           </div>
-          <div className="social-icon">
+          {/* <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.email}>
               <img src={Mail} alt="" />
             </a>
-          </div>
-          <div className="social-icon">
+          </div> */}
+          {/* <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
               <img src={Twitter} alt="" />
             </a>
-          </div>
-          <div className="social-icon">
+          </div> */}
+          {/* <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.devpost}>
               <img src={DevPost} alt="" />
             </a>
-          </div>
+          </div> */}
         </div>
-        <div className="Register_a">
+        {/* <div className="Register_a">
           <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
             <Btn type="Register" overlay="Fill the form" />
           </a>
@@ -90,14 +90,15 @@ const Footer = () => {
               <Btn type="Volunteer" class="Volunteer" overlay="Fill the form" />
             </a>
           )}
-        </div>
+        </div> */}
         <div className="footer_info">
-          <p>
-            Contact us{" "}
+        <p>Made with ❤️ Webdev team @coc_vjti</p>
+          {/* <p>
+            Contact us{' '}
             <a href={SOCIALS.email}>
               <em>{SOCIALS.mail}</em>
-            </a>{" "}
-          </p>
+            </a>{' '}
+          </p> */}
 
           {FOOTER.Privacy_policy.required && (
             <a
@@ -119,7 +120,7 @@ const Footer = () => {
               <p>Terms of Use</p>
             </a>
           )}
-          <p>Made with ❤️</p>
+          
         </div>
         {template && viewTemplate && (
           <GithubTemplate hideTemplate={() => setViewTemplate(false)} />
