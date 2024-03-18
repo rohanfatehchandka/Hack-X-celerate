@@ -122,7 +122,7 @@ function TimelineComponent() {
             </div>
             <h2>
               05:45 PM <br /> <br />
-              Winners Announcement and Closing Ceremony
+              Winners Announcement <br /> <br /> and Closing Ceremony
             </h2>
           </div>
         </div>
