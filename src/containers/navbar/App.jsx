@@ -1,13 +1,14 @@
-import {useEffect, useRef, useState} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {HashLink as Link} from 'react-router-hash-link';
-import styled from 'styled-components';
-import HomePage from '../Home/HomePage';
-import logoClose from './assets/ham-c.svg';
-import hamLogo from './assets/ham.svg';
-import './styles.scss';
-
-import {MdxContent} from '../Mdx';
+import { useEffect, useRef, useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+import styled from "styled-components";
+import HomePage from "../Home/HomePage";
+import logoClose from "./assets/ham-c.svg";
+import hamLogo from "./assets/ham.svg";
+import "./styles.scss";
+import rightLogo from "./assets/HackXcelerate Logo (3).png";
+import rightLogo1 from "./assets/123.jpg";
+import { MdxContent } from "../Mdx";
 
 const NAVIGATION_OFFSET = 66;
 
@@ -17,15 +18,18 @@ const Wrapper = styled.div`
 
   @media (max-width: 1000px) {
     margin: 0;
-    display: ${props => (props.toggle ? 'none' : 'static')};
+    display: ${(props) => (props.toggle ? "none" : "static")};
     height: 100vh;
     width: 100vw;
     position: fixed;
-    top: ${props => (props.toggle ? '-1000px' : '0px')};
+    top: ${(props) => (props.toggle ? "-1000px" : "0px")};
     transition: top 1s;
     .nav-content {
       height: 35%;
       background-color: rgba(50, 13, 136);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 `;
@@ -51,13 +55,28 @@ const Wrapper = styled.div`
 //   );
 // };
 
+const NavItem = styled.li`
+  margin-right: 40px;
+  display: inline-block;
+`;
+
+const NavImage = styled.img`
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+`;
+
+const RightLogo = styled.img`
+  width: ${(props) => props.width}; /* Adjust the size of the image */
+  margin-left: 50px;
+`;
 const NAVBAR = ({}) => {
   const [toggle, setToggle] = useState(true);
   const [isOffset, setIsOffset] = useState(false);
 
   const navigation = useRef();
 
-  const listenScrollEvent = e => {
+  const listenScrollEvent = (e) => {
     if (window.scrollY >= NAVIGATION_OFFSET) {
       setIsOffset(true);
     } else {
@@ -66,8 +85,8 @@ const NAVBAR = ({}) => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
-    return () => window.removeEventListener('scroll', listenScrollEvent);
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
 
   const handleOutsideCick = (event, ref) => {
@@ -79,12 +98,12 @@ const NAVBAR = ({}) => {
   };
 
   useEffect(() => {
-    document.addEventListener('mousedown', e =>
+    document.addEventListener("mousedown", (e) =>
       handleOutsideCick(e, navigation)
     );
 
     return () => {
-      document.removeEventListener('mousedown', e =>
+      document.removeEventListener("mousedown", (e) =>
         handleOutsideCick(e, navigation)
       );
     };
@@ -92,40 +111,58 @@ const NAVBAR = ({}) => {
 
   return (
     <Router>
-      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
+      <nav className={`nav_bar ${isOffset && "nav_bar-offset-crossed"}`}>
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
             <ul>
-              <li>
-                <Link to={`#home`}>
-                  <span className="links">Home </span>{' '}
-                </Link>
-              </li>
-              <li>
-                <Link to={`#faq`}>
-                  <span className="links">FAQ </span>{' '}
-                </Link>
-              </li>
-              <li>
-                <Link to={`#prizes`}>
-                  <span className="links">prizes </span>{' '}
-                </Link>
-              </li>
-              <li>
-                <Link to={`#sponsors`}>
-                  <span className="links">sponsors </span>{' '}
-                </Link>
-              </li>
-              <li>
-                <Link to={`#team`}>
-                  <span className="links">team </span>{' '}
-                </Link>
-              </li>
-              <img
-                className="s-close"
-                onClick={() => setToggle(true)}
-                src={logoClose}
-              />
+              <NavItem>
+                <li>
+                  <Link to={`#home`}>
+                    <span className="links">Home </span>{" "}
+                  </Link>
+                </li>
+              </NavItem>
+              <NavItem>
+                <li>
+                  <Link to={`#about`}>
+                    <span className="links">About </span>{" "}
+                  </Link>
+                </li>
+              </NavItem>
+              <NavItem>
+                <li>
+                  <Link to={`#faq`}>
+                    <span className="links">FAQ </span>{" "}
+                  </Link>
+                </li>
+              </NavItem>
+              <NavItem>
+                <li>
+                  <Link to={`#prizes`}>
+                    <span className="links">Prizes </span>{" "}
+                  </Link>
+                </li>
+              </NavItem>
+              <NavItem>
+                <li>
+                  <Link to={`#sponsors`}>
+                    <span className="links">Sponsors </span>{" "}
+                  </Link>
+                </li>
+              </NavItem>
+              <NavItem>
+                <li>
+                  <Link to={`#team`}>
+                    <span className="links">Team </span>{" "}
+                  </Link>
+                </li>
+              </NavItem>
+
+              <RightLogo src={rightLogo} width="300px" alt="Right Logo" />
+              <div className="links1">
+                <span>in association with</span>
+              </div>
+              <RightLogo src={rightLogo1} width="300px" alt="Right Logo" />
             </ul>
           </div>
           <div className="ease" />
@@ -136,7 +173,6 @@ const NAVBAR = ({}) => {
           src={hamLogo}
         />
       </nav>
-
       <Switch>
         <Route path="/blog" exact={true}>
           <MdxContent />

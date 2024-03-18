@@ -1,4 +1,4 @@
-import './style.scss';
+import "./style.scss";
 
 function PrizeHeading(props) {
   return (
@@ -18,4 +18,4 @@ function FirstPrize(props) {
   );
 }
 
-export {FirstPrize, PrizeHeading};
+export { FirstPrize, PrizeHeading };

@@ -1,6 +1,6 @@
-import Typed from 'react-typed';
-import {TOP_SECTION} from '../../Module/General';
-import './style.css';
+import Typed from "react-typed";
+import { TOP_SECTION } from "../../Module/General";
+import "./style.css";
 
 export default function MytypedComponent() {
   return (

@@ -1,5 +1,5 @@
-import {SOCIALS} from '../../Module/General';
-import './style.css';
+import { SOCIALS } from "../../Module/General";
+import "./style.css";
 
 export default function Media() {
   return (

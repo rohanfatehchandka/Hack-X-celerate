@@ -1,12 +1,15 @@
-import './style.css';
+import "./style.css";
 
-import {MIDDLE_SECTION} from '../../Module/General';
+import { MIDDLE_SECTION } from "../../Module/General";
+import { VISION_SECTION } from "../../Module/General";
 
 function LogoSectionAbout() {
   return (
     <div className="LogoSectionAbout">
       <h1>{MIDDLE_SECTION.TITLE}</h1>
       <p>{MIDDLE_SECTION.LONG_DESCRIPTION}</p>
+      <h1>{VISION_SECTION.TITLE}</h1>
+      <p>{VISION_SECTION.LONG_DESCRIPTION}</p>
     </div>
   );
 }
@@ -19,4 +22,4 @@ function Logo() {
   );
 }
 
-export {Logo, LogoSectionAbout};
+export { Logo, LogoSectionAbout };

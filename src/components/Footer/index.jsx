@@ -1,24 +1,24 @@
-import {useEffect, useState} from 'react';
-import {FOOTER, SOCIALS, TOP_SECTION} from '../../Module/General';
-import {Btn} from '../Landing/index.jsx';
-import cross from './assets/cross.svg';
-import DevPost from './assets/icons8-dev-post.svg';
-import Dis from './assets/icons8-discord.svg';
-import Insta from './assets/icons8-instagram.svg';
-import Linked from './assets/icons8-linkedin-2.svg';
-import Mail from './assets/icons8-mail.svg';
-import Twitter from './assets/icons8-twitter.svg';
-import PrivacyPolicy from './assets/Privacy policy.pdf';
-import TermsOfUse from './assets/Terms of use.pdf';
+import { useEffect, useState } from "react";
+import { FOOTER, SOCIALS, TOP_SECTION } from "../../Module/General";
+import { Btn } from "../Landing/index.jsx";
+import cross from "./assets/cross.svg";
+import DevPost from "./assets/icons8-dev-post.svg";
+import Dis from "./assets/icons8-discord.svg";
+import Insta from "./assets/icons8-instagram.svg";
+import Linked from "./assets/icons8-linkedin-2.svg";
+import Mail from "./assets/icons8-mail.svg";
+import Twitter from "./assets/icons8-twitter.svg";
+import PrivacyPolicy from "./assets/Privacy policy.pdf";
+import TermsOfUse from "./assets/Terms of use.pdf";
 //------------------------------------------------------------------
-import './style.scss';
+import "./style.scss";
 
-const GithubTemplate = ({hideTemplate}) => {
+const GithubTemplate = ({ hideTemplate }) => {
   return (
     <div className="template">
       <div className="template-left">
         <p>
-          Join us to{' '}
+          Join us to{" "}
           <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>Gear Up</a>,
           where we will be hosting PUBLIC workshops, tech talks, panel
           discussions, and career sessions!
@@ -34,14 +34,14 @@ const Footer = () => {
   const [viewTemplate, setViewTemplate] = useState(true);
 
   useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
+    window.addEventListener("scroll", listenScrollEvent);
 
     return () => {
-      window.removeEventListener('scroll', listenScrollEvent);
+      window.removeEventListener("scroll", listenScrollEvent);
     };
   }, []);
 
-  const listenScrollEvent = e => {
+  const listenScrollEvent = (e) => {
     if (window.scrollY > 2800) setTemplate(true);
     else if (window.scrollY < 2800) setTemplate(false);
   };
@@ -93,10 +93,10 @@ const Footer = () => {
         </div>
         <div className="footer_info">
           <p>
-            Contact us{' '}
+            Contact us{" "}
             <a href={SOCIALS.email}>
               <em>{SOCIALS.mail}</em>
-            </a>{' '}
+            </a>{" "}
           </p>
 
           {FOOTER.Privacy_policy.required && (

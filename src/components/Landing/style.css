@@ -34,7 +34,22 @@ button {
   margin-top: 19px;
   
 }
+.join_disco {
+  color: #ffffff;
+  background-color: #0077ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
 
+.join_disco:hover {
+  background-color: #0055cc;
+}
+
+.join_disco .icon {
+  margin-right: 10px;
+}
 .buttom-group{
   width: 100%;
   overflow: auto;
@@ -104,6 +119,27 @@ button:hover .overlay {
     /* font-size: 6rem; */
   }
 }
+.venue_card {
+  color: #ffffff;
+  background-color: #9796F0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  max-width: 550px;
+  font-size: 2.0rem;
+  /* Adjust width as needed */
+}
+
+.venue_card .icon {
+  margin-right: 10px;
+}
+
+.venue_card i {
+  color: white;
+}
+
+
 
 /* main targer */
 
