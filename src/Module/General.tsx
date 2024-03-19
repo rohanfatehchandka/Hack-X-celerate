@@ -259,31 +259,31 @@ const JudgesInfo = [
       name: "Web Development",
       role: "Organizer",
       driveLink:
-        "https://drive.google.com/file/d/1F1Eb737CP6YlsMkkDUaWUmm88QZynzRG/view?usp=sharing",
+        "https://drive.google.com/file/d/1mo7S9K1zvAlAbHLARpUibzm8SLaZi7ha/view?usp=sharing",
     },
     {
       name: "AI/ML",
       role: "Organizer",
       driveLink:
-        "https://drive.google.com/file/d/1F1Eb737CP6YlsMkkDUaWUmm88QZynzRG/view?usp=sharing",
+        "https://drive.google.com/file/d/1mo7S9K1zvAlAbHLARpUibzm8SLaZi7ha/view?usp=sharing",
     },
     {
       name: "Blockchain",
       role: "Organizer",
       driveLink:
-        "https://drive.google.com/file/d/1F1Eb737CP6YlsMkkDUaWUmm88QZynzRG/view?usp=sharing",
+        "https://drive.google.com/file/d/1mo7S9K1zvAlAbHLARpUibzm8SLaZi7ha/view?usp=sharing",
     },
     {
       name: "Cybersecurity",
       role: "Organizer",
       driveLink:
-        "https://drive.google.com/file/d/1F1Eb737CP6YlsMkkDUaWUmm88QZynzRG/view?usp=sharing",
+        "https://drive.google.com/file/d/1mo7S9K1zvAlAbHLARpUibzm8SLaZi7ha/view?usp=sharing",
     },
     {
       name: "App Development",
       role: "Organizer",
       driveLink:
-        "https://drive.google.com/file/d/1F1Eb737CP6YlsMkkDUaWUmm88QZynzRG/view?usp=sharing",
+        "https://drive.google.com/file/d/1mo7S9K1zvAlAbHLARpUibzm8SLaZi7ha/view?usp=sharing",
     },
   ],
 ];
