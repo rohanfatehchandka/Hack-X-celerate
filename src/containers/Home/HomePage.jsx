@@ -30,10 +30,8 @@ import {
 import MyCalender from "../calender";
 import "./about.css";
 import pattern from "./assets/pattern4.png";
-import hrs from "./assets/hrs.png";
-import team from "./assets/team.png";
-import prize from "./assets/prize.png";
-import tracks from "./assets/tracks.png";
+import mix from "./assets/mix.png";
+import coding from "./assets/coding.png";
 
 const SponsorGroup = (props, index) => {
   return (
@@ -69,7 +67,7 @@ const TeamMembers = (props, index) => {
   return (
     <Row key={index} className="members">
       {props.map((s, i) => (
-        <Col key={i} className="" sm={12} lg={4} md={4}>
+        <Col key={i} className="" sm={12} lg={6} md={6}>
           <Member info={s} />
         </Col>
       ))}
@@ -81,7 +79,7 @@ const Judge1 = (props, index) => {
   return (
     <Row key={index} className="members">
       {props.map((s, i) => (
-        <Col key={i} className="" sm={12} lg={4} md={4}>
+        <Col key={i} className="member-card" sm={12} lg={4} md={4}>
           <Judge info={s} />
         </Col>
       ))}
@@ -129,32 +127,7 @@ export default function HomePage() {
                 }}
               >
                 <Col>
-                  <img src={hrs} style={{ width: "200px", height: "200px" }} />
-                </Col>
-                <Col>
-                  <img
-                    src={tracks}
-                    style={{ width: "200px", height: "200px" }}
-                  />
-                </Col>
-              </Row>
-              <Row
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  marginTop: window.innerWidth > 640 ? "40px" : "7px",
-                  flexDirection: window.innerWidth <= 640 ? "column" : "row",
-                  gap: window.innerWidth <= 640 && "3rem",
-                }}
-              >
-                <Col>
-                  <img src={team} style={{ width: "200px", height: "200px" }} />
-                </Col>
-                <Col>
-                  <img
-                    src={prize}
-                    style={{ width: "200px", height: "200px" }}
-                  />
+                  <img src={coding} style={{ width: "30vw", aspectRatio: 1 }} />
                 </Col>
               </Row>
             </Col>

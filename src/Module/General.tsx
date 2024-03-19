@@ -187,7 +187,7 @@ const Prizeinfo = [
         "Special prize to the best team among all the First Year students!",
     },
     {
-      icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
+      icon: <i className=" third fas fa-4x fa-medal"></i>,
       type: "Best SY",
       content:
         "Special prize to the best team among all the Second Year students!",
@@ -250,31 +250,7 @@ const TeamInfo = [
       linkedin: "",
       img: lyin,
     },
-    // {
-    //   Name: "Erika",
-    //   role: "Organizer",
-    //   github: "",
-    //   linkedin: "",
-    //   img: Ryah,
-    // },
   ],
-  // [
-  //   //Array 2
-  //   {
-  //     Name: "Lyanola",
-  //     role: "Organizer",
-  //     github: "",
-  //     linkedin: "",
-  //     img: lyin,
-  //   },
-  //   {
-  //     Name: "Zoheb",
-  //     role: "Organizer",
-  //     github: "",
-  //     linkedin: "",
-  //     img: zoha,
-  //   },
-  // ],
 ];
 
 const JudgesInfo = [

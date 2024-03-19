@@ -1,6 +1,8 @@
 import { SOCIALS, TOP_SECTION } from "../../Module/General";
 import MytypedComponent from "../Typed/index.js";
 import "./style.css";
+import coclogo from "./assets/coclogo.png";
+import hacklogo from "./assets/hacklogo.png";
 
 const Btn = (props) => {
   return (
@@ -26,13 +28,20 @@ const About = () => {
 const Myinfo = () => {
   return (
     <div className="Myinfo">
-      <About />
-      <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
+      <img src={coclogo} style={{ width: "40vw" }} alt="coclogo"></img>
+      <p style={{ width: "40vw", textAlign: "center" }}>presents</p>
+      <img
+        src={hacklogo}
+        style={{ paddingTop: "20px", paddingBottom: "20px", width: "40vw" }}
+        alt="hacklogo"
+      ></img>
+      {/* <About />
+      <p> {TOP_SECTION.SHORT_DESCRIPTION}</p> */}
       <div className="venue_card" style={{ marginTop: "20px" }}>
         <div className="icon">
           <i className="fas fa-map-marker-alt"></i>
         </div>
-        <div>Veermata Jijabai Technological Institute,VJTI</div>
+        <div>Veermata Jijabai Technological Institute, VJTI</div>
       </div>
 
       <div className="buttom-group" style={{ marginTop: "20px" }}>

@@ -10,11 +10,10 @@ function TimelineComponent() {
             <div className="number-box">
               <span>01</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               01:00 PM <br />
               <br />
-              Opening ceremony and PS <br /> <br />
-              discussion{" "}
+              Opening Ceremony
             </h2>
           </div>
         </div>
@@ -24,7 +23,7 @@ function TimelineComponent() {
             <div className="number-box">
               <span>02</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               02:00 PM <br /> <br />
               Coding Phase Begins
             </h2>
@@ -36,7 +35,7 @@ function TimelineComponent() {
             <div className="number-box">
               <span>03</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               08:00 PM <br /> <br />
               Dinner Break
             </h2>
@@ -48,7 +47,7 @@ function TimelineComponent() {
             <div className="number-box">
               <span>04</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               01:00 AM <br /> <br />
               Midnight Snacks
             </h2>
@@ -60,7 +59,7 @@ function TimelineComponent() {
             <div className="number-box">
               <span>05</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               08:00 AM <br /> <br />
               Breakfast
             </h2>
@@ -72,7 +71,7 @@ function TimelineComponent() {
             <div className="number-box">
               <span>06</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               12:00 PM <br /> <br />
               Lunch
             </h2>
@@ -84,7 +83,7 @@ function TimelineComponent() {
             <div className="number-box">
               <span>07</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               02:00 PM <br /> <br />
               Coding Phase Ends
             </h2>
@@ -96,9 +95,9 @@ function TimelineComponent() {
             <div className="number-box">
               <span>08</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               02:15 PM <br /> <br />
-              Initial Juding Commences
+              Judging Commences
             </h2>
           </div>
         </div>
@@ -108,9 +107,9 @@ function TimelineComponent() {
             <div className="number-box">
               <span>09</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               05:15 PM <br /> <br />
-              Initial Juding Concludes
+              Judging Concludes
             </h2>
           </div>
         </div>
@@ -120,9 +119,9 @@ function TimelineComponent() {
             <div className="number-box">
               <span>10</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               05:45 PM <br /> <br />
-              Winners Announcement <br /> <br /> and Closing Ceremony
+              Closing Ceremony
             </h2>
           </div>
         </div>
@@ -132,7 +131,7 @@ function TimelineComponent() {
             <div className="number-box">
               <span>11</span>
             </div>
-            <h2>
+            <h2 style={{ width: "70%" }}>
               06:30 PM <br /> <br />
               Conclusion of Event
             </h2>

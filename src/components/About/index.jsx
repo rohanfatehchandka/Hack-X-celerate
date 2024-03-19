@@ -1,4 +1,5 @@
 import "./style.css";
+import mix from "../../containers/Home/assets/mix.png";
 
 import { MIDDLE_SECTION } from "../../Module/General";
 import { VISION_SECTION } from "../../Module/General";
@@ -17,7 +18,7 @@ function LogoSectionAbout() {
 function Logo() {
   return (
     <div className="logoS">
-      <img className="Logo" src={MIDDLE_SECTION.LOGO} alt="Limbohacks" />
+      <img className="Logo" src={mix} alt="Limbohacks" />
     </div>
   );
 }
