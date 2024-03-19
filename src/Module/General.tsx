@@ -44,7 +44,7 @@ const TOP_SECTION = {
   DISCORD_LINK: "",
   JUDGES_FORM_LINK:
     "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u",
-  HACKERS_REGISTRATION_FORM_LINK: "https://forms.gle/hKPrtLuvBSzW5mbb6",
+  HACKERS_REGISTRATION_FORM_LINK: "https://forms.gle/1t2KyzcRrSZA298Z9",
 };
 
 const SOCIALS = {
@@ -259,31 +259,31 @@ const JudgesInfo = [
       name: "Web Development",
       role: "Organizer",
       driveLink:
-        "https://drive.google.com/file/d/1mo7S9K1zvAlAbHLARpUibzm8SLaZi7ha/view?usp=sharing",
+        "https://drive.google.com/file/d/1r55ygiOqCy_NEaPuaZM1uYZIhQ_Xag0l/view?usp=sharing",
     },
     {
       name: "AI/ML",
       role: "Organizer",
       driveLink:
-        "https://drive.google.com/file/d/1mo7S9K1zvAlAbHLARpUibzm8SLaZi7ha/view?usp=sharing",
+        "https://drive.google.com/file/d/1JUMfkZfcMwmVlHnBh-y8B0E1lASsNT6P/view?usp=sharing",
     },
     {
       name: "Blockchain",
       role: "Organizer",
       driveLink:
-        "https://drive.google.com/file/d/1mo7S9K1zvAlAbHLARpUibzm8SLaZi7ha/view?usp=sharing",
+        "https://drive.google.com/file/d/1P6oExZaqVPHtZjTuLdsKzkgdAgG3S5R0/view?usp=sharing",
     },
     {
       name: "Cybersecurity",
       role: "Organizer",
       driveLink:
-        "https://drive.google.com/file/d/1mo7S9K1zvAlAbHLARpUibzm8SLaZi7ha/view?usp=sharing",
+        "https://drive.google.com/file/d/1-VKqtnZQfclieM3EXZGyG33IkAc4GrFw/view?usp=sharing",
     },
     {
       name: "App Development",
       role: "Organizer",
       driveLink:
-        "https://drive.google.com/file/d/1mo7S9K1zvAlAbHLARpUibzm8SLaZi7ha/view?usp=sharing",
+        "https://drive.google.com/file/d/1FF0s7yiTII3VfivS8rC7KWLPUu7oUhRr/view?usp=sharing",
     },
   ],
 ];

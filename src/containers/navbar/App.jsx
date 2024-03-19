@@ -464,8 +464,8 @@ const NAVBAR = ({}) => {
                 </Link>
               </li>
               <li>
-                <Link to={`#team`}>
-                  <span className="links">Team </span>{" "}
+                <Link to={`#tracks`}>
+                  <span className="links">Tracks </span>{" "}
                 </Link>
               </li>
               <img

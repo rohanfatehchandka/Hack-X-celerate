@@ -188,7 +188,7 @@ export default function HomePage() {
         {media && <Birds top="120vh" left="0vh" type="" />}
         {/* ********Judges here ***** */}
 
-        <h1 id="team">Tracks</h1>
+        <h1 id="tracks">Tracks</h1>
 
         {JudgesInfo.map(Judge1)}
         {/* ********Team here ***** */}

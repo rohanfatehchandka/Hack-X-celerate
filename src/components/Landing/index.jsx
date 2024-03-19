@@ -28,11 +28,26 @@ const About = () => {
 const Myinfo = () => {
   return (
     <div className="Myinfo">
-      <img src={coclogo} style={{ width: "40vw" }} alt="coclogo"></img>
-      <p style={{ width: "40vw", textAlign: "center" }}>presents</p>
+      <img
+        src={coclogo}
+        style={{ width: window.innerWidth > 640 ? "40vw" : "80vw" }}
+        alt="coclogo"
+      ></img>
+      <p
+        style={{
+          width: window.innerWidth > 640 ? "40vw" : "90vw",
+          textAlign: "center",
+        }}
+      >
+        presents
+      </p>
       <img
         src={hacklogo}
-        style={{ paddingTop: "20px", paddingBottom: "20px", width: "40vw" }}
+        style={{
+          paddingTop: "20px",
+          paddingBottom: "20px",
+          width: window.innerWidth > 640 ? "40vw" : "80vw",
+        }}
         alt="hacklogo"
       ></img>
       {/* <About />

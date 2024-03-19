@@ -25,7 +25,6 @@ const Judge = ({ info }: { info: any }) => {
     <div className="member1">
       <div className="card1">
         <h3>{name}</h3>
-        <p>{role}</p>
         <button className="drive-button">
           <a href={driveLink} target="_blank" rel="noopener noreferrer">
             Download PS

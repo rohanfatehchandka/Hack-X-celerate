@@ -7,7 +7,9 @@ import { VISION_SECTION } from "../../Module/General";
 function LogoSectionAbout() {
   return (
     <div className="LogoSectionAbout">
-      <h1>{MIDDLE_SECTION.TITLE}</h1>
+      <h2>
+        <b>{MIDDLE_SECTION.TITLE}</b>
+      </h2>
       <p>{MIDDLE_SECTION.LONG_DESCRIPTION}</p>
       <h1>{VISION_SECTION.TITLE}</h1>
       <p>{VISION_SECTION.LONG_DESCRIPTION}</p>
